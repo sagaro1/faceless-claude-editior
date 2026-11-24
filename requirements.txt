@@ -1,0 +1,10 @@
+# ElevenLabs voices / SFX (UGC ad pipeline)
+elevenlabs
+python-dotenv
+
+# free / local voice pipelines (voice.py, story_voice.py, dialogue_voice.py, sfx.py)
+edge-tts
+kokoro-onnx
+faster-whisper
+numpy
+soundfile

@@ -1,0 +1,54 @@
+# ---- secrets (never commit) ----
+.env
+.env.local
+keys/*
+!keys/.gitkeep
+
+# ---- python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- node / remotion ----
+node_modules/
+video/out/
+.dist/
+
+# ---- big local tools (download them, see README) ----
+tools/
+
+# ---- your own media: inputs, generated clips, voices, renders ----
+input/*
+!input/README.md
+samples/
+work3d/
+assets/
+
+# video/public: keep the small JSON edit/timeline files (compositions import them), drop media
+video/public/**/*.mp4
+video/public/**/*.mov
+video/public/**/*.webm
+video/public/**/*.mp3
+video/public/**/*.wav
+video/public/**/*.m4a
+video/public/**/*.jpg
+video/public/**/*.jpeg
+video/public/**/*.png
+video/public/**/*.webp
+video/public/**/*.gif
+# ...except the small example short + the synthesized (licence-free) SFX kit, so a fresh clone renders
+!video/public/example/voice.mp3
+!video/public/example/bg/*.jpg
+!video/public/sfx/*.wav
+video/public/example/lines/
+
+# ---- misc ----
+.DS_Store
+Thumbs.db
+*.log
+
+# ---- private client work (name client-specific files in .git/info/exclude, which is never pushed) ----
+video/src/client/*
+!video/src/client/README.md
+clients/

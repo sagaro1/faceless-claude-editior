@@ -1,0 +1,16 @@
+{
+ "style": "stylized 3D render, vibrant cartoon art, saturated colors, soft lighting, no people, no text",
+ "backgrounds": {
+  "workshop": "a cozy cluttered workshop with a laptop, cables and a tiny sleeping robot on the desk",
+  "office": "a bright modern office with a big window and a coffee machine"
+ },
+ "shots": [
+  {"start": "@0", "bg": "workshop", "cam": {"zoom": [1.0, 1.15]},
+   "chars": [{"id": "sam", "track": [{"t": 0, "x": 0.45, "y": 1850, "s": 1.5, "expr": "happy", "face": "R"},
+                                      {"t": "w:talks", "pose": "point", "expr": "laugh"}]}],
+   "sfx": [{"id": "whoosh", "at": 0.05}]},
+  {"start": "L2", "bg": "office", "cam": {"zoom": [1.05, 1.2]},
+   "chars": [{"id": "boss", "track": [{"t": 0, "x": 0.6, "y": 1850, "s": 1.5, "expr": "angry", "face": "L", "pose": "hip"},
+                                       {"t": "L3", "expr": "smug"}]}]}
+ ]
+}
